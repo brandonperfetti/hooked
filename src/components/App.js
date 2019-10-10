@@ -4,8 +4,8 @@ import Header from "./Header";
 import Movie from "./Movie";
 import Search from "./Search";
 
-// http://www.omdbapi.com/?i=tt3896198&apikey=d23bc781
-const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=4a3b711b";
+// http://www.omdbapi.com/?i=tt3896198&apikey=d23bc781 OMDB provided API URL
+const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=d23bc781";
 
 
 const initialState = {
@@ -63,7 +63,7 @@ const App = () => {
       type: "SEARCH_MOVIES_REQUEST"
     });
 
-    fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=4a3b711b`)
+    fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=d23bc781`)
       .then(response => response.json())
       .then(jsonResponse => {
         if (jsonResponse.Response === "True") {
