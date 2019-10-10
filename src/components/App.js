@@ -4,7 +4,7 @@ import Header from "./Header";
 import Movie from "./Movie";
 import Search from "./Search";
 
-
+// http://www.omdbapi.com/?i=tt3896198&apikey=d23bc781
 const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=4a3b711b";
 
 
